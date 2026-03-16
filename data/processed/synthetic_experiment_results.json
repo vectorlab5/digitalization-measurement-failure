@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "n_firms": 500,
+  "n_years": 4,
+  "n_regression": 1500,
+  "validation": {
+    "env_proxy_mean": 0.001,
+    "env_proxy_sd": 0.1004,
+    "lag_dig_mean": 0.505,
+    "lag_dig_sd": 0.2888,
+    "corr_true_dig_revenue": -0.0075,
+    "corr_true_dig_ln_revenue": -0.0074
+  },
+  "regression": {
+    "coef_lag_dig": -0.3194,
+    "se_lag_dig": 0.0379,
+    "t_stat": -8.42
+  }
+}

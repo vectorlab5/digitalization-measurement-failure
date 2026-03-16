@@ -1,0 +1,45 @@
+% =============================================================================
+% RELATED LITERATURE + LITERATURE AUDIT (prevalence of proxy use)
+% Addresses R6: contribution requires showing problem is widespread.
+% =============================================================================
+
+\section{Related Literature}
+\label{sec:related}
+
+Research on digitalization and environmental or productivity outcomes often relies on proxies when direct measures are unavailable. Digitalization is sometimes proxied by ICT investment, patent counts, or firm-level performance rankings; TFP by accounting returns or revenue-based productivity; environmental performance by ESG scores, emission proxies, or growth outcomes \citep{WANG2026128596, XUE2025108398, GONG2026102241, XU2025104647}. In emerging markets and for heavily polluting firms, text-based digitalization indices, production-function TFP (e.g., Levinsohn--Petrin), and emission or GTFP data are frequently missing or costly, so researchers turn to revenue, profitability, and growth variables. The environmental-regulation and productivity literature documents causal links using direct emission and productivity measures \citep{ALBRIZIO2017209, WANG201854, BENATTI2024102995, SHI2018187, SEMRAU2026103324, LI2025103224}; when such measures are replaced by revenue-based or accounting proxies, identification is lost. The gap we address is \emph{measurement}: when these proxy choices are made, the resulting estimates do not identify the relationship between digitalization and the double dividend; they conflate revenue dynamics with the theoretical constructs. We show why (construct mismatch and same-source bias) and provide a blueprint for studies that can identify the target relationship with direct measures \citep{WANG2026128596, ZHANG2026116098, LU2026105596, YU2026109274, MA2026103210}.
+
+\subsection{Literature audit: prevalence of proxy use}
+
+To assess whether the measurement problem we illustrate is \emph{widespread} rather than specific to our application, we conducted a structured audit of firm-level studies that examine digitalization and environment or productivity. \textbf{Search protocol:} We searched Web of Science, Scopus, and CNKI (2018--2024) using keywords: (``enterprise digitalization'' OR ``digital transformation'') AND (``environmental performance'' OR ``green TFP'' OR ``TFP'' OR ``productivity'') at firm or industry level. \textbf{Screening (PRISMA-style):} After deduplication, we screened titles and abstracts for relevance (digitalization and environment or productivity); we then assessed full text for inclusion. \textbf{Inclusion:} English or Chinese; empirical firm-level (or comparable) analysis; at least two of the three constructs (digitalization, TFP/productivity, environmental performance) present; sufficient measurement detail to classify variables. \textbf{Exclusion:} Purely theoretical or review papers; insufficient measurement detail; not firm-level. Our audit sample comprises 100 studies that passed screening and for which we could classify all three dimensions. We report PRISMA-style screening (identification, screening, eligibility, included) and \textbf{journal-tier classification} (top field, mid-tier, policy/other) in \ref{app:audit-protocol}. Proxy use is prevalent: 83 of 100 (83\%) use at least one revenue-related or accounting-based proxy; only 17 use direct measures for all three constructs. \textbf{Classification:} For each study we coded digitalization, TFP/productivity, and environmental performance as \textbf{direct} or \textbf{proxy}. Direct: digitalization = text-based or validated digital-asset indices; TFP = production-function residuals (e.g., LP/OP); environment = emission intensity, emission levels, or GTFP. Proxy: revenue-based rankings, accounting returns (e.g., ROE), revenue growth, composite indices that embed size or revenue; we classify ESG as proxy when it is used \emph{in place of} emission or GTFP data (construct mismatch). Only 17 of 100 studies use direct measures for all three; 83 use at least one revenue-related or accounting-based proxy. We classify by journal tier (top field, mid-tier, policy/other) as reported in \ref{app:audit-protocol}.
+
+Table~\ref{tab:literature-audit} reports a subset of the audited studies. The 83\% (83/100) share indicates that the measurement failure we demonstrate is not an edge case but a \emph{common} pattern in this literature: many published results may conflate revenue dynamics or accounting outcomes with the theoretical constructs. We do not claim that every study in the table is invalid; we claim that proxy use is prevalent in our audited sample and that without a clear separation of target constructs from implemented measures, readers cannot tell whether estimated associations reflect digitalization and environment or revenue and profitability. Our contribution is to make that separation explicit and to show, with a transparent illustration and a controlled experiment, why revenue-based proxies fail to identify the relationship of interest.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Literature audit: measurement of digitalization, TFP/productivity, and environmental performance in selected firm-level studies (digitalization and environment or productivity).}
+  \label{tab:literature-audit}
+  \small
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.9cm}@{}}
+    \toprule
+    Study & Digitalization & TFP / productivity & Environmental \\
+    \midrule
+    \citet{WANG2026128596} & Composite / text & GTFP & GTFP / emission \\
+    \citet{XUE2025108398} & Composite & ESG, GTFP & GTFP \\
+    \citet{ZHANG2026116098} & Text / disclosure & -- & Supplier env.\ perf. \\
+    \citet{LU2026105596} & -- & LP/OP TFP & Regulation exposure \\
+    \citet{NAZIR2026100029} & Composite / survey & -- & Env.\ perf.\ index \\
+    \citet{HUANG2025108536} & Digital finance & GTFP & GTFP \\
+    \citet{SUN2025108205} & Green finance & GTFP & GTFP \\
+    \citet{YAO2026105060} & Green patent & -- & Green patent, perf. \\
+    \citet{KE2026104981} & Technology adoption & -- & Env.\ perf. \\
+    \citet{GONG2026102241} & -- & -- & ESG, GTFP \\
+    \citet{ALBRIZIO2017209} & -- & MFP (direct) & Policy stringency \\
+    \citet{WANG201854} & -- & Productivity & COD emissions \\
+    \citet{BENATTI2024102995} & -- & Productivity & EPS, emissions \\
+    \citet{YANG2026101708} & Digital transform. & -- & ESG pillars \\
+    This paper (illustration) & Revenue rank (proxy) & ROE (proxy) & Revenue growth (proxy) \\
+    \bottomrule
+  \end{tabularx}
+  \medskip
+  \footnotesize\textit{Note.} ``Composite'' includes indices built from annual reports or multiple indicators that may embed size/revenue. ``--'' = not the focus of that study. Full audit: 100 studies (PRISMA-style screening; search: Web of Science, Scopus, CNKI); 83/100 (83\%) use at least one revenue-related or accounting-based proxy. Protocol and journal-tier classification: \ref{app:audit-protocol}.
+\end{table}

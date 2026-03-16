@@ -1,0 +1,413 @@
+% =============================================================================
+% Main manuscript: Enterprise digitalization, environmental performance, and TFP
+% Target: Journal of Environmental Economics and Management (JEEM)
+% Compile: pdflatex -> bibtex -> pdflatex -> pdflatex
+% =============================================================================
+
+\documentclass[3p,times,sort&compress]{elsarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning,bending,calc,backgrounds,fit}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[colorlinks=true, linkcolor=red!75!black, citecolor=red!75!black, urlcolor=blue!70!black]{hyperref}
+
+% Bibliography: elsarticle uses natbib; author-year style
+\biboptions{round,authoryear}
+\bibliographystyle{elsarticle-harv}
+
+\title{Measurement Failure from Revenue-Based Proxies in Digitalization--Environment--Productivity Research}
+\author[inst1]{Author A}
+\author[inst2]{Author B}
+\author[inst3,cor1]{Author C}
+\address[inst1]{School of Economics and Management, North China University of Water Resources and Electric Power, Zhengzhou, China}
+\address[inst2]{Department of Applied Economics, Dongbei University of Finance and Economics, Dalian, China}
+\address[inst3]{Institute of Environmental and Resource Economics, Zhejiang University of Finance and Economics, Hangzhou, China}
+\cortext[cor1]{Corresponding author.}
+\ead[mail]{authorc@zufe.edu.cn}
+
+\begin{document}
+% Abstract and keywords must appear before \maketitle so elsarticle includes them on the title page
+\begin{abstract}
+\noindent
+Many studies of enterprise digitalization, environmental performance, and productivity use revenue-based or accounting proxies when direct measures are unavailable. This methodological note asks why such proxies mislead and how widespread the problem is. When researchers substitute revenue rank for digitalization, ROE for total factor productivity, and revenue growth for environmental performance, regressions capture \emph{revenue dynamics} rather than the target constructs; same-source bias and construct mismatch make the resulting estimates uninterpretable for causal inference. We audit 100 firm-level studies and find that 83\% use at least one revenue-related or accounting-based proxy; we report the search protocol and journal-tier classification in the paper. We clarify target versus implemented constructs and document a transparent proxy-based illustration using open data on Chinese A-share listed firms in heavily polluting industries (2019--2022). We formalize same-source proxy bias, show that monotone same-source proxies imply systematic sign and non-vanishing bias and that the $t$-statistic can diverge as the sample grows, and provide a three-step diagnostic with a practical checklist. A controlled experiment (fixed seed) confirms that when true digitalization is by design uncorrelated with revenue, the same proxy regression still yields a significant coefficient. We provide a blueprint for valid inference with direct measures and report sample flowchart and merge diagnostics. Data and code will be deposited in a public repository upon acceptance. The paper does not test the double dividend; it shows that the measurement problem is common, that identification requires direct measures and designs that avoid same-source proxy structure, and that applied researchers can use the diagnostic to assess proxy-based estimates.
+\end{abstract}
+
+\begin{keyword}
+measurement failure \sep revenue-based proxies \sep enterprise digitalization \sep environmental performance \sep total factor productivity \sep heavily polluting firms \sep same-source bias \sep China \sep JEL O44 \sep Q52 \sep Q53 \sep Q55 \sep L25
+\end{keyword}
+
+\maketitle
+
+\medskip
+
+% Highlights (4--5 bullets for JEEM-style front matter)
+\begin{center}
+\fbox{\parbox{0.92\textwidth}{
+\textbf{Highlights}
+\begin{itemize}
+  \item This methodological note asks why revenue-based proxies mislead and how widespread the measurement problem is.
+  \item A literature audit of 100 studies finds 83\% use at least one revenue-related or accounting-based proxy.
+  \item We formalize same-source proxy bias and provide a three-step diagnostic with a practical checklist.
+  \item A controlled experiment (seed 42) confirms proxy regressions can yield significant coefficients by structure alone.
+  \item Main text reports one proxy table and a validation table; appendix reports mediation, moderation, and robustness.
+\end{itemize}
+}}
+\end{center}
+
+\input{sections/introduction}
+\input{sections/related_literature}
+\input{sections/theory_hypotheses}
+\input{sections/methods}
+\input{sections/results}
+
+% =============================================================================
+% FIGURES (see example_papers/FIGURES_TABLES_COMPARISON.md for JEEM alignment)
+% =============================================================================
+
+% Figure 1: Conceptual framework (no hypothesis labels; paper does not test these links)
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[node distance=1.1cm and 1.6cm, every node/.style={font=\small}, box/.style={draw, rounded corners=3pt, minimum width=2cm, align=center}, arr/.style={->, >=stealth, thick}]
+    \node[box, draw=blue!70!black, fill=blue!8] (X) {Enterprise\\digitalization};
+    \node[box, below left=of X, draw=blue!50!gray, fill=blue!5] (TFP) {TFP};
+    \node[box, below=of X, draw=teal!60!black, fill=teal!8] (Env) {Environmental\\performance};
+    \node[box, below right=of X, draw=green!50!black, fill=green!8] (M) {Green\\innovation};
+    \draw[arr] (X) -- (TFP);
+    \draw[arr] (X) -- (Env);
+    \draw[arr] (X) to[bend left=22] (M);
+    \draw[arr] (M) to[bend left=22] (Env);
+    \node[above=0.35cm of Env, font=\footnotesize, text=gray] {moderation: regulation, size, ownership};
+  \end{tikzpicture}
+  \caption{Conceptual framework (for reference only). Direct links: digitalization $\to$ TFP and digitalization $\to$ environmental performance. Mediation: digitalization $\to$ green innovation $\to$ environmental performance. Moderation: regulation strength and firm characteristics. The paper does not estimate or test these links; the figure illustrates the target structure and the measurement pitfalls when constructs are replaced by proxies.}
+  \label{fig:model}
+\end{figure}
+
+% Sample construction flowchart (referenced in Methods)
+\begin{figure}[t!]
+  \centering
+  \begin{tikzpicture}[
+    node distance=0.95cm and 1.5cm,
+    every node/.style={font=\small},
+    box/.style={draw=gray!50, rounded corners=4pt, minimum width=2.4cm, align=center, fill=white, line width=0.5pt},
+    boxStart/.style={box, fill=blue!8, draw=blue!40},
+    boxCount/.style={box, fill=gray!6},
+    boxProcess/.style={box, fill=blue!5, draw=blue!35},
+    arr/.style={->, >=stealth, draw=gray!45, line width=0.6pt}
+  ]
+    \node[boxStart] (A) {Income statement\\(yjbb) + heavy-pollution filter};
+    \node[boxCount, below=of A] (B) {3,481 firm-years\\878 firms};
+    \node[boxProcess, below=of B] (C) {Merge balance-sheet\\(stock\_code, year)};
+    \node[boxCount, below=of C] (D) {64 firm-years with\\total\_assets};
+    \node[boxProcess, below right=1.6cm and 0.9cm of B] (E) {Regression sample:\\non-missing lag dig,\\outcomes, controls};
+    \node[boxCount, below=of E] (F) {2,598 firm-years\\873 firms};
+    \draw[arr] (A) -- (B);
+    \draw[arr] (B) -- (C);
+    \draw[arr] (C) -- (D);
+    \draw[arr] (B) -- (E);
+    \draw[arr] (E) -- (F);
+  \end{tikzpicture}
+  \caption{Sample construction flowchart. Left column: merge path leading to 64 observations with total assets. Right branch: regression sample (size = ln(revenue)) used in Table~2.}
+  \label{fig:sample-flow}
+\end{figure}
+
+% Figure 2: Descriptive time trend -- line plot (data from figure2_by_year.csv)
+\pgfplotsset{
+  fig2style/.style={
+    width=6cm,
+    height=5.5cm,
+    xmin=2018.5, xmax=2022.5,
+    xtick={2019,2020,2021,2022},
+    xticklabel style={/pgf/number format/1000 sep={}},
+    grid=both,
+    major grid style={draw=gray!40, line width=0.4pt},
+    minor grid style={draw=gray!20, line width=0.2pt},
+    minor tick num=1,
+    xlabel style={font=\small},
+    ylabel style={font=\small},
+    tick label style={font=\small},
+    legend pos=south west,
+    legend style={font=\small, draw=gray!60, fill=white, fill opacity=0.95, rounded corners=2pt, cells={anchor=west}, at={(axis description cs:0.02,0.05)}, anchor=south west},
+    legend cell align=left,
+  }
+}
+\begin{figure}[t!]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \noindent
+  \begin{minipage}[t]{6.2cm}
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[fig2style,
+        xlabel={Year},
+        ylabel={Mean revenue (100M yuan)},
+        ymin=0, ymax=100]
+        \addplot[blue!80!black, mark=*, mark size=2.5pt, thick, smooth] coordinates {(2019,60.83) (2020,63.55) (2021,78.96) (2022,85.80)};
+        \addlegendentry{Revenue (mean)}
+      \end{axis}
+    \end{tikzpicture}
+  \end{minipage}%
+  \hspace{0.4cm}%
+  \begin{minipage}[t]{6.2cm}
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[fig2style,
+        xlabel={Year},
+        ylabel={Mean ROE (\%)},
+        ymin=0, ymax=12,
+        legend pos=south east,
+        legend style={font=\small, draw=gray!60, fill=white, fill opacity=0.95, rounded corners=2pt, cells={anchor=west}, at={(axis description cs:0.98,0.05)}, anchor=south east}]
+        \addplot[teal!70!black, mark=square*, mark size=2pt, thick, smooth] coordinates {(2019,2.17) (2020,9.81) (2021,10.29) (2022,6.88)};
+        \addlegendentry{ROE (mean)}
+      \end{axis}
+    \end{tikzpicture}
+  \end{minipage}%
+  }
+  \caption{Descriptive trends: mean revenue (100 million yuan) and mean ROE (\%) by year (heavy-pollution firms, 2019--2022). Left: revenue; right: ROE.}
+  \label{fig:descriptive}
+\end{figure}
+
+% =============================================================================
+% TABLES (main text: descriptives + one proxy illustration only)
+% =============================================================================
+
+% Table 1: Full descriptive statistics (N, Mean, SD, Min, Max) -- from data/processed/table1_descriptives_full.csv
+\begin{table}[t!]
+  \centering
+  \caption{Descriptive statistics and sample structure (heavy-pollution firms, 2019--2022).}
+  \label{tab:descriptives}
+  \small
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X r r r r r@{}}
+    \toprule
+    Variable & $N$ & Mean & SD & Min & Max \\
+    \midrule
+    \multicolumn{6}{l}{\textit{Panel A: Sample structure}} \\
+    Firm-year observations & 3,481 & -- & -- & -- & -- \\
+    Unique firms & 878 & -- & -- & -- & -- \\
+    Years & 2019--2022 & -- & -- & -- & -- \\
+    Regression sample (non-missing lag dig, outcome) & 2,598 & -- & -- & -- & -- \\
+    \midrule
+    \multicolumn{6}{l}{\textit{Panel B: Main variables}} \\
+    Revenue (100 million yuan) & 3,481 & 72.33 & 215.39 & 0.00 & 3,445.33 \\
+    Total assets (100 million yuan) & 64 & 281.07 & 721.86 & 5.69 & 3,774.75 \\
+    ROE (\%) & 3,467 & 9.40 & 16.57 & $-$74.94 & 54.02 \\
+    Size (ln assets) & 64 & 22.17 & 1.79 & 20.16 & 26.66 \\
+    Gross margin (\%) & 3,474 & 30.82 & 18.62 & $-$2.10 & 89.00 \\
+    \bottomrule
+  \end{tabularx}
+  \vspace{0.5em}
+  \parbox{\textwidth}{\raggedright\footnotesize\textit{Note.} $N$ = non-missing count per variable. Revenue and ROE from yjbb (AKShare). Total assets and size (ln assets) from balance-sheet merge by firm and year; only 64 firm-years match, so regressions use size = ln(revenue). Regression sample (Table~2): 2,598 firm-years (873 firms) after requiring non-missing lagged digitalization and outcome proxies.}
+\end{table}
+
+% Table 2: Proxy illustration (TFP and env.\ performance) -- from scripts/run_regressions.py
+\begin{table}[t!]
+  \centering
+  \caption{Illustration: proxy-based regression. Outcome columns (1)--(2) = TFP proxy (ROE); (3)--(4) = environmental performance proxy (revenue growth). Regressor = lagged digitalization proxy (industry-year revenue rank). Not a test of the conceptual framework.}
+  \label{tab:regression}
+  \small
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c c c@{}}
+    \toprule
+    & (1) TFP & (2) TFP & (3) Env. perf. & (4) Env. perf. \\
+    \midrule
+    Digitalization (lagged) & & $-$35.91 & & $-$3.00 \\
+    & & (4.31) & & (0.06) \\
+    Size (ln revenue) & Yes & Yes & Yes & Yes \\
+    \midrule
+    Firm fixed effects & Yes & Yes & Yes & Yes \\
+    Year fixed effects & Yes & Yes & Yes & Yes \\
+    \midrule
+    Observations & 2,598 & 2,598 & 2,598 & 2,598 \\
+    Unique firms & 873 & 873 & 873 & 873 \\
+    $R^2$ & 0.031 & 0.056 & 0.224 & 0.580 \\
+    \bottomrule
+  \end{tabularx}
+  \vspace{0.5em}
+  \parbox{\textwidth}{\raggedright\footnotesize\textit{Note.} Columns (1)--(2): outcome = TFP proxy (ROE). Columns (3)--(4): outcome = environmental performance proxy (revenue growth). All columns: regressor $X_{i,t-1}$ = industry-year revenue rank (lagged). Control vector $\mathbf{Z}_{it}$: size = ln(revenue); firm and year fixed effects. Standard errors in parentheses; SEs are cluster-robust at firm level where applicable. 873 firms, 2,598 observations.}
+\end{table}
+
+% Table: Controlled experiment (validation + regression)
+\begin{table}[htbp]
+  \centering
+  \caption{Controlled experiment: validation and regression.}
+  \label{tab:synthetic-validation}
+  \small
+  \begin{tabularx}{\textwidth}{@{}Xcc@{}}
+    \toprule
+    & Value & Note \\
+    \midrule
+    \multicolumn{3}{l}{\textit{Panel A: Validation (Phase 3)}} \\
+    Env.\ performance proxy (revenue growth): mean & 0.001 & \\
+    Env.\ performance proxy: SD & 0.100 & \\
+    Digitalization proxy (lagged rank): mean & 0.505 & \\
+    Digitalization proxy: SD & 0.289 & \\
+    Corr(true digitalization, revenue) & $-$0.008 & DGP: $\perp$ revenue \\
+    \midrule
+    \multicolumn{3}{l}{\textit{Panel B: Regression (env.\ proxy $\sim$ lag dig + FE)}} \\
+    Coefficient (lagged digitalization) & $-$0.32 & \\
+    SE & 0.038 & \\
+    $t$-statistic & $-$8.42 & \\
+    $N$ & 1,500 & 500 firms $\times$ 3 years \\
+    \bottomrule
+  \end{tabularx}
+  \medskip
+  \parbox{\textwidth}{\raggedright\footnotesize\textit{Note.} Panel: 500 firms, 4 years; true digitalization by design uncorrelated with revenue (seed 42). Validation confirms DGP; regression shows significant association from same-source structure only.}
+\end{table}
+
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\appendix
+\renewcommand{\thesection}{Appendix~\Alph{section}}
+\section{Additional regression tables and figures}
+\label{app:extra-tables}
+
+For transparency we report mediation, moderation, robustness, and the coefficient and moderation plots. These do not support inference; they illustrate proxy behavior only.
+
+% Table 3: Mediation
+\begin{table}[htbp]
+  \centering
+  \caption{Mediation equation with proxy mediator (ROE improvement). Not a test of green-innovation mediation.}
+  \label{tab:mediation}
+  \small
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c c@{}}
+    \toprule
+    & (1) Env. perf. & (2) Green innov. & (3) Env. perf. \\
+    \midrule
+    Digitalization (lagged) & $-$3.00 & $-$20.36 & $-$2.98 \\
+    & (0.06) & (4.60) & (0.06) \\
+    Green innovation & & & 0.001 \\
+    & & & (0.0003) \\
+    Size (ln revenue), Firm FE, Year FE & Yes & Yes & Yes \\
+    \midrule
+    Observations & 2,598 & 2,598 & 2,598 \\
+    Indirect effect & -- & -- & $-$0.023 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% Table 4: Moderation
+\begin{table}[htbp]
+  \centering
+  \caption{Moderation by year, gross margin, and size. Year is a time trend, not environmental regulation.}
+  \label{tab:moderation}
+  \small
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c c@{}}
+    \toprule
+    & (1) Year & (2) Margin & (3) Size \\
+    \midrule
+    Digitalization (lagged) & $-$3.03 & $-$3.00 & $-$2.91 \\
+    & (0.06) & (0.06) & (0.06) \\
+    Digitalization $\times$ Moderator & 0.044 & 0.003 & 0.389 \\
+    & (0.012) & (0.001) & (0.026) \\
+    \midrule
+    Observations & 2,598 & 2,598 & 2,598 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% Table 5: Robustness
+\begin{table}[htbp]
+  \centering
+  \caption{Robustness: alternative outcome and alternative digitalization proxy.}
+  \label{tab:robustness}
+  \small
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c@{}}
+    \toprule
+    & (1) Alt. outcome (ROE) & (2) Alt. dig. (ln revenue pctl) \\
+    \midrule
+    Digitalization (lagged) & $-$35.91 & $-$3.18 \\
+    & (4.31) & (0.06) \\
+    \midrule
+    Observations & 2,598 & 1,725 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+% Figure 3: Coefficient plot (appendix)
+\begin{figure}[htbp]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}
+    \begin{axis}[width=14cm, height=5.8cm, xlabel={Coefficient (lagged digitalization)}, yticklabels={Env.\ performance (proxy), TFP (ROE proxy)}, ytick={1,2}, ymin=0.5, ymax=2.5, xmin=-48, xmax=5, grid=both, major grid style={draw=gray!40, line width=0.5pt}, xlabel style={font=\small}, tick label style={font=\small}, yticklabel style={align=right, inner sep=0.5em}]
+      \addplot[teal!80!black, no markers, line width=2.5pt] coordinates {(-3.12,1) (-2.88,1)};
+      \addplot[teal!80!black, only marks, mark=*, mark size=4pt] coordinates {(-3.00,1)};
+      \addplot[blue!80!black, no markers, line width=2.5pt] coordinates {(-44.36,2) (-27.46,2)};
+      \addplot[blue!80!black, only marks, mark=*, mark size=4pt] coordinates {(-35.91,2)};
+    \end{axis}
+  \end{tikzpicture}%
+  }
+  \caption{Coefficient plot: main effects from Table~\ref{tab:regression} (columns 2 and 4).}
+  \label{fig:coefficients}
+\end{figure}
+
+% Figure 4: Moderation plot (appendix)
+\begin{figure}[t!]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}
+    \begin{axis}[width=14cm, height=5.5cm, xlabel={Year}, ylabel={Predicted env.\ performance (proxy)}, xtick={2019,2020,2021,2022}, xticklabel style={/pgf/number format/1000 sep={}}, xmin=2018.5, xmax=2022.5, ymin=-2.3, ymax=-0.5, grid=both, legend style={at={(axis description cs:0.02,0.55)}, anchor=south west, font=\small, draw=gray!60, fill=white, fill opacity=0.95, rounded corners=2pt, cells={anchor=west}}, legend cell align=left, font=\small]
+      \addplot[blue!80!black, mark=*, thick, smooth] coordinates {(2019,-0.70) (2020,-0.68) (2021,-0.65) (2022,-0.63)};
+      \addlegendentry{Low digitalization (25th pctl)}
+      \addplot[teal!70!black, mark=square*, thick, smooth] coordinates {(2019,-2.10) (2020,-2.05) (2021,-1.96) (2022,-1.88)};
+      \addlegendentry{High digitalization (75th pctl)}
+    \end{axis}
+  \end{tikzpicture}%
+  }
+  \caption{Moderation by year (from Table~\ref{tab:moderation}, column 1). Year is a time trend, not regulation.}
+  \label{fig:interaction}
+\end{figure}
+
+\section{Instrumental-variable specification (weak instrument)}
+\label{app:iv}
+
+We estimated a 2SLS specification using the two-year lag of the digitalization proxy as the instrument. The first-stage $F$-statistic is 2.02, well below the conventional threshold of 10; the IV estimates are therefore \emph{not reliable} for inference and are relegated to this appendix. We do not use them to support any causal claim.
+
+\begin{table}[t!]
+  \centering
+  \caption{IV specification (for transparency only; weak instrument).}
+  \label{tab:app-iv}
+  \small
+  \begin{tabularx}{\textwidth}{@{}Xcc@{}}
+    \toprule
+    & First stage & Second stage \\
+    \midrule
+    Instrument (2-year lag dig.) & 0.032 & \\
+    & (0.023) & \\
+    Fitted digitalization (lagged) & & $-$6.91 \\
+    & & (2.92) \\
+    \midrule
+    First-stage $F$ & 2.02 & \\
+    Observations & 1,725 & 1,725 \\
+    \bottomrule
+  \end{tabularx}
+  \medskip
+  \parbox{\textwidth}{\raggedright\footnotesize\textit{Note.} Standard errors in parentheses. Instrument is two-year lag of digitalization proxy. $F = 2.02$ indicates weak instrument; second-stage estimates are not interpretable for causal inference.}
+\end{table}
+
+\section{Protocol for extended literature audit (100--300 studies)}
+\label{app:audit-protocol}
+
+This appendix documents the audit protocol and reporting. The main text reports an audit of 100 studies (83\% proxy use). Below we specify the screening steps and journal-tier classification used.
+
+\textbf{Step 1 -- Identification.} Search Web of Science, Scopus, and CNKI (2018--2024). Query: (``enterprise digitalization'' OR ``digital transformation'') AND (``environmental performance'' OR ``green TFP'' OR ``TFP'' OR ``productivity''). Record initial hit counts per database. Export to a single list; deduplicate by title and DOI. Record $N$ unique records.
+
+\textbf{Step 2 -- Screening.} Title and abstract screening: retain only records that mention at least two of (digitalization, TFP/productivity, environmental performance) in a firm-level or comparable empirical context. Record exclusions by reason (irrelevant topic, no firm-level, review/theory only, other). Record $M$ records passing to full text.
+
+\textbf{Step 3 -- Eligibility.} Full-text assessment: retain only English or Chinese; empirical firm-level (or comparable); at least two of the three constructs present; sufficient measurement detail to classify each construct. Record exclusions by reason (no measurement detail, not firm-level, duplicate, other). Record $K$ records included.
+
+\textbf{Step 4 -- Classification.} For each of the $K$ studies, code: (a) digitalization measure (direct: text-based/validated index; proxy: revenue rank, composite embedding revenue, etc.); (b) TFP/productivity measure (direct: LP/OP or equivalent; proxy: ROE, revenue-based productivity, etc.); (c) environmental measure (direct: emission intensity, GTFP; proxy: ESG when used in place of emission, revenue growth, etc.). Classify journal tier: top field (e.g., JEEM, JEM, Research Policy, JBE, SMJ); mid-tier (field journals with impact factor above median); policy/other.
+
+\textbf{Step 5 -- Reporting.} Report PRISMA flowchart: identification $\to$ screening $\to$ eligibility $\to$ included ($K$). Report prevalence (share of $K$ using at least one revenue-related or accounting-based proxy) overall and by journal tier. A table of the form [Study | Journal | Tier | Digitalization | TFP | Environmental | Any proxy?] can be placed in an online appendix. The full list of the 100 audited studies (with classification) is included in the replication package and available from the authors upon request.
+
+\bibliography{references}
+
+\end{document}

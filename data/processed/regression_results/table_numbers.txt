@@ -1,0 +1,6 @@
+N_obs = 47
+N_firms = 16
+Table 2: TFP column 2: coef(dig) = 0.2610, se = 0.5813, R2 = 0.2965, N = 47
+Table 2: Env column 4: coef(dig) = 0.2610, se = 0.5813, R2 = 0.1868, N = 47
+Table 3: Mediation total = 0.2610 (0.5813); direct = 0.2928 (0.5567); indirect = -0.0318
+Table 4: Moderation dig = 2.3736 (0.8950); interaction = 1.3883 (0.4708)

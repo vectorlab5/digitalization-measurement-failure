@@ -1,0 +1,25 @@
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.spl
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+main.pdf
+
+# Submission bundles
+submission.zip
+submission/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Experiments / temp results
+experiments/
+*.tmp

@@ -1,0 +1,798 @@
+{
+  "query": "enterprise digitalization environmental performance",
+  "timestamp": "2026-03-14T18:55:17.033826",
+  "total": 50,
+  "sources": [
+    "semantic_scholar",
+    "arxiv",
+    "dblp"
+  ],
+  "papers": [
+    {
+      "title": "Performance of Genetic Algorithms in the Context of Software Model Refactoring",
+      "authors": [
+        "Vittorio Cortellessa",
+        "Daniele Di Pompeo",
+        "Michele Tucci"
+      ],
+      "year": 2023,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Software systems continuously evolve due to new functionalities, requirements, or maintenance activities. In the context of software evolution, software refactoring has gained a strategic relevance. The space of possible software refactoring is usually very large, as it is given by the combinations of different refactoring actions that can produce software system alternatives. Multi-objective algorithms have shown the ability to discover alternatives by pursuing different objectives simultaneously. Performance of such algorithms in the context of software model refactoring is of paramount importance. Therefore, in this paper, we conduct a performance analysis of three genetic algorithms to compare them in terms of performance and quality of solutions. Our results show that there are significant differences in performance among the algorithms (e.g., PESA2 seems to be the fastest one, while NSGA-II shows the least memory usage).",
+      "source": "arxiv",
+      "arxiv_id": "2308.13875v1",
+      "pdf_url": "https://arxiv.org/pdf/2308.13875v1.pdf"
+    },
+    {
+      "title": "Reengineering multi tiered enterprise business applications for performance enhancement and reciprocal or rectangular hyperbolic relation of variation of data transportation time with row pre-fetch size of relational database drivers",
+      "authors": [
+        "Sridhar Sowmiyanarayanan"
+      ],
+      "year": 2012,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Reengineering multi tiered enterprise business applications for performance enhancement and reciprocal or rectangular hyperbolic relation of variation of data transportation time with row pre-fetch size of relational database drivers",
+      "source": "arxiv",
+      "arxiv_id": "1201.4655v1",
+      "pdf_url": "https://arxiv.org/pdf/1201.4655v1.pdf"
+    },
+    {
+      "title": "(In)Secure Configuration Practices of WPA2 Enterprise Supplicants",
+      "authors": [
+        "Alberto Bartoli",
+        "Eric Medvet",
+        "Andrea De Lorenzo",
+        "Fabiano Tarlao"
+      ],
+      "year": 2018,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "WPA2 Enterprise is a fundamental technology for secure communication in enterprise wireless networks. A key requirement of this technology is that WiFi-enabled devices (i.e., supplicants) be correctly configured before connecting to the enterprise wireless network. Supplicants that are not configured correctly may fall prey of attacks aimed at stealing the network credentials very easily. Such credentials have an enormous value because they usually unlock access to all enterprise services.   In this work we investigate whether users and technicians are aware of these important and widespread risks. We conducted two extensive analyses: a survey among approximately 1000 users about how they configured their WiFi devices for enterprise network access; and, a review of approximately 310 network configuration guides made available by enterprise network administrators. The results provide strong indications that the key requirement of WPA2 Enterprise is violated systematically and thus can no longer be considered realistic.",
+      "source": "arxiv",
+      "arxiv_id": "1806.03215v1",
+      "pdf_url": "https://arxiv.org/pdf/1806.03215v1.pdf"
+    },
+    {
+      "title": "Text-to-SQL for Enterprise Data Analytics",
+      "authors": [
+        "Albert Chen",
+        "Manas Bundele",
+        "Gaurav Ahlawat",
+        "Patrick Stetz",
+        "Zhitao Wang",
+        "Qiang Fei",
+        "Donghoon Jung",
+        "Audrey Chu",
+        "Bharadwaj Jayaraman",
+        "Ayushi Panth",
+        "Yatin Arora",
+        "Sourav Jain",
+        "Renjith Varma",
+        "Alexey Ilin",
+        "Iuliia Melnychuk",
+        "Chelsea Chueh",
+        "Joyan Sil",
+        "Xiaofeng Wang"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The introduction of large language models has brought rapid progress on Text-to-SQL benchmarks, but it is not yet easy to build a working enterprise solution. In this paper, we present insights from building an internal chatbot that enables LinkedIn's product managers, engineers, and operations teams to self-serve data insights from a large, dynamic data lake. Our approach features three components. First, we construct a knowledge graph that captures up-to-date semantics by indexing database metadata, historical query logs, wikis, and code. We apply clustering to identify relevant tables for each team or product area. Second, we build a Text-to-SQL agent that retrieves and ranks context from the knowledge graph, writes a query, and automatically corrects hallucinations and syntax errors. Third, we build an interactive chatbot that supports various user intents, from data discovery to query writing to debugging, and displays responses in rich UI elements to encourage follow-up chats. Our chatbot has over 300 weekly users. Expert review shows that 53% of its responses are correct or close to correct on an internal benchmark set. Through ablation studies, we identify the most important knowledge graph and modeling components, offering a practical path for developing enterprise Text-to-SQL solutions.",
+      "source": "arxiv",
+      "arxiv_id": "2507.14372v1",
+      "pdf_url": "https://arxiv.org/pdf/2507.14372v1.pdf"
+    },
+    {
+      "title": "Enterprise Architecture Model Transformation Engine",
+      "authors": [
+        "Erik Heiland",
+        "Peter Hillmann",
+        "Andreas Karcher"
+      ],
+      "year": 2021,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "With increasing linkage within value chains, the IT systems of different companies are also being connected with each other. This enables the integration of services within the movement of Industry 4.0 in order to improve the quality and performance of the processes. Enterprise architecture models form the basis for this with a better buisness IT-alignment. However, the heterogeneity of the modeling frameworks and description languages makes a concatenation considerably difficult, especially differences in syntax, semantic and relations. Therefore, this paper presents a transformation engine to convert enterprise architecture models between several languages. We developed the first generic translation approach that is free of specific meta-modeling, which is flexible adaptable to arbitrary modeling languages. The transformation process is defined by various pattern matching techniques using a rule-based description language. It uses set theory and first-order logic for an intuitive description as a basis. The concept is practical evaluated using an example in the area of a large German IT-service provider. Anyhow, the approach is applicable between a wide range of enterprise architecture frameworks.",
+      "source": "arxiv",
+      "arxiv_id": "2108.13169v1",
+      "pdf_url": "https://arxiv.org/pdf/2108.13169v1.pdf"
+    },
+    {
+      "title": "An Enterprise Architecture Framework for E-learning",
+      "authors": [
+        "Abbas Najafizadeh",
+        "Maryam Saadati",
+        "S. Mahdi Jamei",
+        "S. Shervin Ostadzadeh"
+      ],
+      "year": 2021,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "With a trend toward becoming more and more information and communication based, learning services and processes were also evolved. E-learning comprises all forms of electronically supported learning and teaching. The information and communication systems serve as a fundamental role to implement these learning processes. In the typical information-driven organizations, the E-learning is part of a much larger platform for applications and data that extends across the Internet and intranet/extranet. In this respect, E-learning has brought about an inevitable tendency to lunge towards organizing their information based activities in a comprehensive way. Building an Enterprise Architecture (EA) undoubtedly serves as a fundamental concept to accomplish this goal. In this paper, we propose an EA for E-learning information systems. The presented framework helps developers to design and justify completely integrated learning and teaching processes and information systems which results in improved pedagogical success rate.",
+      "source": "arxiv",
+      "arxiv_id": "2105.07857v1",
+      "pdf_url": "https://arxiv.org/pdf/2105.07857v1.pdf"
+    },
+    {
+      "title": "A Performance Study of GA and LSH in Multiprocessor Job Scheduling",
+      "authors": [
+        "S. R. Vijayalakshmi",
+        "G. Padmavathi"
+      ],
+      "year": 2010,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Multiprocessor task scheduling is an important and computationally difficult problem. This paper proposes a comparison study of genetic algorithm and list scheduling algorithm. Both algorithms are naturally parallelizable but have heavy data dependencies. Based on experimental results, this paper presents a detailed analysis of the scalability, advantages and disadvantages of each algorithm. Multiprocessors have emerged as a powerful computing means for running real-time applications, especially where a uni-processor system would not be sufficient enough to execute all the tasks. The high performance and reliability of multiprocessors have made them a powerful computing resource. Such computing environment requires an efficient algorithm to determine when and on which processor a given task should execute. In multiprocessor systems, an efficient scheduling of a parallel program onto the processors that minimizes the entire execution time is vital for achieving a high performance. This scheduling problem is known to be NP- Hard. In multiprocessor scheduling problem, a given program is to be scheduled in a given multiprocessor system such that the program's execution time is minimized. The last job must be completed as early as possible. Genetic algorithm (GA) is one of the widely used techniques for constrained optimization.",
+      "source": "arxiv",
+      "arxiv_id": "1002.1149v1",
+      "pdf_url": "https://arxiv.org/pdf/1002.1149v1.pdf"
+    },
+    {
+      "title": "Performance Analysis of Software to Hardware Task Migration in Codesign",
+      "authors": [
+        "Dorsaf Sebai",
+        "Abderrazak Jemai",
+        "Imed Bennour"
+      ],
+      "year": 2010,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The complexity of multimedia applications in terms of intensity of computation and heterogeneity of treated data led the designers to embark them on multiprocessor systems on chip. The complexity of these systems on one hand and the expectations of the consumers on the other hand complicate the designers job to conceive and supply strong and successful systems in the shortest deadlines. They have to explore the different solutions of the design space and estimate their performances in order to deduce the solution that respects their design constraints. In this context, we propose the modeling of one of the design space possible solutions: the software to hardware task migration. This modeling exploits the synchronous dataflow graphs to take into account the different migration impacts and estimate their performances in terms of throughput.",
+      "source": "arxiv",
+      "arxiv_id": "1002.1154v1",
+      "pdf_url": "https://arxiv.org/pdf/1002.1154v1.pdf"
+    },
+    {
+      "title": "Performance Tuning and Scaling Enterprise Blockchain Applications",
+      "authors": [
+        "Grant Chung",
+        "Luc Desrosiers",
+        "Manav Gupta",
+        "Andrew Sutton",
+        "Kaushik Venkatadri",
+        "Ontak Wong",
+        "Goran Zugic"
+      ],
+      "year": 2019,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Blockchain scalability can be complicated and costly. As enterprises begin to adopt blockchain technology to solve business problems, there are valid concerns if blockchain applications can support the transactional demands of production systems. In fact, the multiple distributed components and protocols that underlie blockchain applications makes performance optimization a non-trivial task. Blockchain performance optimization and scalability require a methodology to reduce complexity and cost. Furthermore, existing performance results often lack the requirements, load, and infrastructure of a production application. In this paper, we first develop a methodical approach to performance tuning enterprise blockchain applications to increase performance and transaction capacity. The methodology is applied to an enterprise blockchain-based application (leveraging Hyperledger Fabric) for performance tuning and optimization with the goal of bridging the gap between laboratory and production deployed system performance. We then present extensive results and analysis of our performance testing for on-premise and cloud deployments, in which we were able to scale the application from 30 to 3000 TPS without forking the Hyperledger Fabric source code and maintaining a reasonable infrastructure footprint. We also provide blockchain application and platform recommendations for performance improvement.",
+      "source": "arxiv",
+      "arxiv_id": "1912.11456v1",
+      "pdf_url": "https://arxiv.org/pdf/1912.11456v1.pdf"
+    },
+    {
+      "title": "Impact and Implications of Generative AI for Enterprise Architects in Agile Environments: A Systematic Literature Review",
+      "authors": [
+        "Stefan Julian Kooy",
+        "Jean Paul Sebastian Piest",
+        "Rob Henk Bemthuis"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Generative AI (GenAI) is reshaping enterprise architecture work in agile software organizations, yet evidence on its effects remains scattered. We report a systematic literature review (SLR), following established SLR protocols of Kitchenham and PRISMA, of 1,697 records, yielding 33 studies across enterprise, solution, domain, business, and IT architect roles. GenAI most consistently supports (i) design ideation and trade-off exploration; (ii) rapid creation and refinement of artifacts (e.g., code, models, documentation); and (iii) architectural decision support and knowledge retrieval. Reported risks include opacity and bias, contextually incorrect outputs leading to rework, privacy and compliance concerns, and social loafing. We also identify emerging skills and competencies, including prompt engineering, model evaluation, and professional oversight, and organizational enablers around readiness and adaptive governance. The review contributes with (1) a mapping of GenAI use cases and risks in agile architecting, (2) implications for capability building and governance, and (3) an initial research agenda on human-AI collaboration in architecture. Overall, the findings inform responsible adoption of GenAI that accelerates digital transformation while safeguarding architectural integrity.",
+      "source": "arxiv",
+      "arxiv_id": "2510.22003v1",
+      "pdf_url": "https://arxiv.org/pdf/2510.22003v1.pdf"
+    },
+    {
+      "title": "Mind the Boundary: Stabilizing Gemini Enterprise A2A via a Cloud Run Hub Across Projects and Accounts",
+      "authors": [
+        "Takao Morita"
+      ],
+      "year": 2026,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Enterprise conversational UIs increasingly need to orchestrate heterogeneous backend agents and tools across project and account boundaries in a secure and reproducible way. Starting from Gemini Enterprise Agent-to-Agent (A2A) invocation, we implement an A2A Hub orchestrator on Cloud Run that routes queries to four paths: a public A2A agent deployed in a different project, an IAM-protected Cloud Run A2A agent in a different account, a retrieval-augmented generation path combining Discovery Engine and Vertex AI Search with direct retrieval of source text from Google Cloud Storage, and a general question answering path via Vertex AI. We show that practical interoperability is governed not only by protocol compliance but also by Gemini Enterprise UI constraints and boundary-dependent authentication. Real UI requests arrive as text-only inputs and include empty accepted output mode lists, so mixing structured data into JSON-RPC responses can trigger UI errors. To address this, we enforce a text-only compatibility mode on the JSON-RPC endpoint while separating structured outputs and debugging signals into a REST tool API. On a four-query benchmark spanning expense policy, project management assistance, general knowledge, and incident response deadline extraction, we confirm deterministic routing and stable UI responses. For the retrieval path, granting storage object read permissions enables evidence-backed extraction of the fifteen minute deadline. All experiments are reproducible using the repository snapshot tagged a2a-hub-gemini-ui-stable-paper.",
+      "source": "arxiv",
+      "arxiv_id": "2602.17675v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.17675v1.pdf"
+    },
+    {
+      "title": "Will enterprise digital transformation affect diversification strategy?",
+      "authors": [
+        "Ge-zhi Wu",
+        "Da-ming You"
+      ],
+      "year": 2021,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "This paper empirically examines the impact of enterprise digital transformation on the level of enterprise diversification. It is found that the digital transformation of enterprises has significantly improved the level of enterprise diversification, and the conclusion has passed a series of robustness tests and endogenous tests. Through mechanism analysis, we find that the promotion effect of enterprise digital transformation on enterprise diversification is mainly realized through market power channel and firm risk channel, the pursuit of establishing market power, monopoly profits and challenge the monopolistic position of market occupiers based on digital transformation and the decentralization strategy to deal with the risks associated with digital transformation are important reasons for enterprises to adopt diversification strategy under the background of digital transformation. Although the organization costs channel, transaction costs channel, block holder control channel, industry type and information asymmetry channel have some influence on the main effect of this paper, they are not the main channel because they have not passed the inter group regression coefficient difference test statistically.",
+      "source": "arxiv",
+      "arxiv_id": "2112.06605v5",
+      "pdf_url": "https://arxiv.org/pdf/2112.06605v5.pdf"
+    },
+    {
+      "title": "A Metric for Performance Portability",
+      "authors": [
+        "S. J. Pennycook",
+        "J. D. Sewall",
+        "V. W. Lee"
+      ],
+      "year": 2016,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The term \"performance portability\" has been informally used in computing to refer to a variety of notions which generally include: 1) the ability to run one application across multiple hardware platforms; and 2) achieving some notional level of performance on these platforms. However, there has been a noticeable lack of consensus on the precise meaning of the term, and authors' conclusions regarding their success (or failure) to achieve performance portability have thus been subjective. Comparing one approach to performance portability with another has generally been marked with vague claims and verbose, qualitative explanation of the comparison. This paper presents a concise definition for performance portability, along with a simple metric that accurately captures the performance and portability of an application across different platforms. The utility of this metric is then demonstrated with a retroactive application to previous work.",
+      "source": "arxiv",
+      "arxiv_id": "1611.07409v1",
+      "pdf_url": "https://arxiv.org/pdf/1611.07409v1.pdf"
+    },
+    {
+      "title": "Enhanced Cluster Computing Performance Through Proportional Fairness",
+      "authors": [
+        "Thomas Bonald",
+        "James Roberts"
+      ],
+      "year": 2014,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The performance of cluster computing depends on how concurrent jobs share multiple data center resource types like CPU, RAM and disk storage. Recent research has discussed efficiency and fairness requirements and identified a number of desirable scheduling objectives including so-called dominant resource fairness (DRF). We argue here that proportional fairness (PF), long recognized as a desirable objective in sharing network bandwidth between ongoing flows, is preferable to DRF. The superiority of PF is manifest under the realistic modelling assumption that the population of jobs in progress is a stochastic process. In random traffic the strategy-proof property of DRF proves unimportant while PF is shown by analysis and simulation to offer a significantly better efficiency-fairness tradeoff.",
+      "source": "arxiv",
+      "arxiv_id": "1404.2266v1",
+      "pdf_url": "https://arxiv.org/pdf/1404.2266v1.pdf"
+    },
+    {
+      "title": "Digital twin of wood working enterprise",
+      "authors": [
+        "Sergey Masaev",
+        "Andrey Minkin",
+        "Evgeniy Troyak",
+        "Andrey Khrulkevich"
+      ],
+      "year": 2024,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "A review of scientific papers has shown that digital twins are very common for modeling the states of physical objects. It is relevant to consider the creation of a digital twin of an enterprise to obtain various assessments in management, taking into account the human factor. In the research, the impact of the human factor is assessed by the digital twin and staff competencies. The system of goals of staff competencies stands for: cognitive, affective, psychomotor. An enterprise model is created from the description of the set of events taking place on it. Each event is mapped to an element of staff competencies target system. The resulting set of staff competencies is estimated by a universal (integral) indicator. The dynamics of the universal indicator characterizes two modes of operation of the enterprise. The first operating mode is normal. The second mode of operation is based on the implementation of staff competencies. Taking into account the competencies of personnel by Bloom's taxonomy allows you to determine their interconnection: cognitive, affective, psychomotor. It correlation depends on the work performed by the employee and the influence of the external environment. It depends on the efforts of the employee as a learner.",
+      "source": "arxiv",
+      "arxiv_id": "2412.09438v1",
+      "pdf_url": "https://arxiv.org/pdf/2412.09438v1.pdf"
+    },
+    {
+      "title": "Assessment various control methods a digital copy of enterprise by integral indicator",
+      "authors": [
+        "Sergey Masaev"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The difficulty of assessing the state lies in a little predictable change in the dimension of a dynamic system under the influence of internal changes and environmental parameters. In the work, the state of such a system is estimated by the method of integral indicators. The application of the method of integral indicators allowed us to evaluate the activity of an enterprise. In the present work, the method of integrated indicators is used to assess the control of a digital copy (enterprise).",
+      "source": "arxiv",
+      "arxiv_id": "2501.17363v1",
+      "pdf_url": "https://arxiv.org/pdf/2501.17363v1.pdf"
+    },
+    {
+      "title": "Understanding the Factors Influencing Self-Managed Enterprises of Crowdworkers: A Comprehensive Review",
+      "authors": [
+        "Alexandre Prestes Uchoa",
+        "Daniel Schneider"
+      ],
+      "year": 2024,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "This paper investigates the shift in crowdsourcing towards self-managed enterprises of crowdworkers (SMECs), diverging from traditional platform-controlled models. It reviews the literature to understand the foundational aspects of this shift, focusing on identifying key factors that may explain the rise of SMECs, particularly concerning power dynamics and tensions between Online Labor Platforms (OLPs) and crowdworkers. The study aims to guide future research and inform policy and platform development, emphasizing the importance of fair labor practices in this evolving landscape.",
+      "source": "arxiv",
+      "arxiv_id": "2403.12769v2",
+      "pdf_url": "https://arxiv.org/pdf/2403.12769v2.pdf"
+    },
+    {
+      "title": "OfficeQA Pro: An Enterprise Benchmark for End-to-End Grounded Reasoning",
+      "authors": [
+        "Krista Opsahl-Ong",
+        "Arnav Singhvi",
+        "Jasmine Collins",
+        "Ivan Zhou",
+        "Cindy Wang",
+        "Ashutosh Baheti",
+        "Owen Oertell",
+        "Jacob Portes",
+        "Sam Havens",
+        "Erich Elsen",
+        "Michael Bendersky",
+        "Matei Zaharia",
+        "Xing Chen"
+      ],
+      "year": 2026,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "We introduce OfficeQA Pro, a benchmark for evaluating AI agents on grounded, multi-document reasoning over a large and heterogeneous document corpus. The corpus consists of U.S. Treasury Bulletins spanning nearly 100 years, comprising 89,000 pages and over 26 million numerical values. OfficeQA Pro consists of 133 questions that require precise document parsing, retrieval, and analytical reasoning across both unstructured text and tabular data. Frontier LLMs including Claude Opus 4.6, GPT-5.4, and Gemini 3.1 Pro Preview achieve less than 5% accuracy on OfficeQA Pro when relying on parametric knowledge, and less than 12% with additional access to the web. When provided directly with the document corpus, frontier agents still struggle on over half of questions, scoring 34.1% on average. We find that providing agents with a structured document representation produced by Databricks' ai_parse_document yields a 16.1% average relative performance gain across agents. We conduct additional ablations to study the effects of model selection, table representation, retrieval strategy, and test-time scaling on performance. Despite these improvements, significant headroom remains before agents can be considered reliable at enterprise-grade grounded reasoning.",
+      "source": "arxiv",
+      "arxiv_id": "2603.08655v1",
+      "pdf_url": "https://arxiv.org/pdf/2603.08655v1.pdf"
+    },
+    {
+      "title": "Environmental Sensor Placement with Convolutional Gaussian Neural Processes",
+      "authors": [
+        "Tom R. Andersson",
+        "Wessel P. Bruinsma",
+        "Stratis Markou",
+        "James Requeima",
+        "Alejandro Coca-Castro",
+        "Anna Vaughan",
+        "Anna-Louise Ellis",
+        "Matthew A. Lazzara",
+        "Dani Jones",
+        "J. Scott Hosking",
+        "Richard E. Turner"
+      ],
+      "year": 2022,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Environmental sensors are crucial for monitoring weather conditions and the impacts of climate change. However, it is challenging to place sensors in a way that maximises the informativeness of their measurements, particularly in remote regions like Antarctica. Probabilistic machine learning models can suggest informative sensor placements by finding sites that maximally reduce prediction uncertainty. Gaussian process (GP) models are widely used for this purpose, but they struggle with capturing complex non-stationary behaviour and scaling to large datasets. This paper proposes using a convolutional Gaussian neural process (ConvGNP) to address these issues. A ConvGNP uses neural networks to parameterise a joint Gaussian distribution at arbitrary target locations, enabling flexibility and scalability. Using simulated surface air temperature anomaly over Antarctica as training data, the ConvGNP learns spatial and seasonal non-stationarities, outperforming a non-stationary GP baseline. In a simulated sensor placement experiment, the ConvGNP better predicts the performance boost obtained from new observations than GP baselines, leading to more informative sensor placements. We contrast our approach with physics-based sensor placement methods and propose future steps towards an operational sensor placement recommendation system. Our work could help to realise environmental digital twins that actively direct measurement sampling to improve the digital representation of reality.",
+      "source": "arxiv",
+      "arxiv_id": "2211.10381v5",
+      "pdf_url": "https://arxiv.org/pdf/2211.10381v5.pdf"
+    },
+    {
+      "title": "Geospatial Analysis and Internet of Things in Environmental Informatics",
+      "authors": [
+        "Andreas Kamilaris",
+        "Frank Ostermann"
+      ],
+      "year": 2018,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Geospatial analysis offers large potential for better understanding, modelling and visualizing our natural and artificial ecosystems, using Internet of Things as a pervasive sensing infrastructure. This paper performs a review of research work based on the IoT, in which geospatial analysis has been employed in environmental informatics. Six different geospatial analysis methods have been identified, presented together with 26 relevant IoT initiatives adopting some of these techniques. Analysis is performed in relation to the type of IoT devices used, their deployment status and data transmission standards, data types employed, and reliability of measurements. This paper scratches the surface of this combination of technologies and techniques, providing indications of how IoT, together with geospatial analysis, are currently being used in the domain of environmental research.",
+      "source": "arxiv",
+      "arxiv_id": "1808.01895v1",
+      "pdf_url": "https://arxiv.org/pdf/1808.01895v1.pdf"
+    },
+    {
+      "title": "The impacts of artificial intelligence on environmental sustainability and human well-being",
+      "authors": [
+        "Noemi Luna Carmeno",
+        "Tiago Domingos",
+        "Daniel W. O'Neill"
+      ],
+      "year": 2026,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Artificial Intelligence (AI) is changing the world, but its impacts on the environment and human well-being remain uncertain. We conducted a systematic literature review of 1,291 studies selected from 6,655 records, identifying the main impacts of AI and how they are assessed. The evidence reveals an uneven landscape: 72% of environmental studies focus narrowly on energy use and CO2 emissions, while only 11% consider systemic effects. Well-being research is largely conceptual and overlooks subjective dimensions. Strikingly, 83% of environmental studies portray AI's impacts as positive, while well-being analyses show a near-even split overall (44% positive; 46% negative). However, this split masks differences across well-being dimensions. While the impacts of AI on income and health are expected to be positive, its impacts on inequality, social cohesion, and employment are expected to be negative. Based on our findings, we suggest several areas for future research. Environmental assessments should incorporate water, material, and biodiversity impacts, and apply a full life-cycle perspective, while well-being research should prioritise empirical analyses. Evaluating AI's overall impact requires accounting for computing-related, application-level, and systemic impacts, while integrating both environmental and social dimensions. Bridging these gaps is essential to understand the full scope of AI's impacts and to steer its development towards environmental sustainability and human flourishing.",
+      "source": "arxiv",
+      "arxiv_id": "2602.24091v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.24091v1.pdf"
+    },
+    {
+      "title": "Reason-Plan-ReAct: A Reasoner-Planner Supervising a ReAct Executor for Complex Enterprise Tasks",
+      "authors": [
+        "Gianni Molinari",
+        "Fabio Ciravegna"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Despite recent advances, autonomous agents often struggle to solve complex tasks in enterprise domains that require coordinating multiple tools and processing diverse data sources. This struggle is driven by two main limitations. First, single-agent architectures enforce a monolithic plan-execute loop, which directly causes trajectory instability. Second, the requirement to use local open-weight models for data privacy introduces smaller context windows leading to the rapid consumption of context from large tool outputs. To solve this problem we introduce RP-ReAct (Reasoner Planner-ReAct), a novel multi-agent approach that fundamentally decouples strategic planning from low-level execution to achieve superior reliability and efficiency. RP-ReAct consists of a Reasoner Planner Agent (RPA), responsible for planning each sub-step, continuously analysing the execution results using the strong reasoning capabilities of a Large Reasoning Model, and one or multiple Proxy-Execution Agent (PEA) that translates sub-steps into concrete tool interactions using a ReAct approach. Crucially, we incorporate a context-saving strategy within the PEA to mitigate context window overflow by managing large tool outputs via external storage and on-demand access. We evaluate RP-ReAct, on the challenging, multi-domain ToolQA benchmark using a diverse set of six open-weight reasoning models. Our empirical results show that RP-ReAct achieves superior performance and improved generalization ability over state-of-the-art baselines when addressing diverse complex tasks across the evaluated domains. Furthermore we establish the enhanced robustness and stability of our approach across different model scales, paving the way for effective and deployable agentic solutions for enterprises.",
+      "source": "arxiv",
+      "arxiv_id": "2512.03560v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.03560v1.pdf"
+    },
+    {
+      "title": "Towards an Objective Metric for the Performance of Exact Triangle Count",
+      "authors": [
+        "Mark P. Blanco",
+        "Scott McMillan",
+        "Tze Meng Low"
+      ],
+      "year": 2020,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The performance of graph algorithms is often measured in terms of the number of traversed edges per second (TEPS). However, this performance metric is inadequate for a graph operation such as exact triangle counting. In triangle counting, execution times on graphs with a similar number of edges can be distinctly different as demonstrated by results from the past Graph Challenge entries. We discuss the need for an objective performance metric for graph operations and the desired characteristics of such a metric such that it more accurately captures the interactions between the amount of work performed and the capabilities of the hardware on which the code is executed. Using exact triangle counting as an example, we derive a metric that captures how certain techniques employed in many implementations improve performance. We demonstrate that our proposed metric can be used to evaluate and compare multiple approaches for triangle counting, using a SIMD approach as a case study against a scalar baseline.",
+      "source": "arxiv",
+      "arxiv_id": "2009.07935v3",
+      "pdf_url": "https://arxiv.org/pdf/2009.07935v3.pdf"
+    },
+    {
+      "title": "Blockchain in Environmental Sustainability Measures: a Survey",
+      "authors": [
+        "Maria-Victoria Vladucu",
+        "Hailun Wu",
+        "Jorge Medina",
+        "Khondaker M. Salehin",
+        "Ziqian Dong",
+        "Roberto Rojas-Cessa"
+      ],
+      "year": 2024,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Real and effective regulation of contributions to greenhouse gas emissions and pollutants requires unbiased and truthful monitoring. Blockchain has emerged not only as an approach that provides verifiable economical interactions but also as a mechanism to keep the measurement, monitoring, incentivation of environmental conservationist practices and enforcement of policy. Here, we present a survey of areas in what blockchain has been considered as a response to concerns on keeping an accurate recording of environmental practices to monitor levels of pollution and management of environmental practices. We classify the applications of blockchain into different segments of concerns, such as greenhouse gas emissions, solid waste, water, plastics, food waste, and circular economy, and show the objectives for the addressed concerns. We also classify the different blockchains and the explored and designed properties as identified for the proposed solutions. At the end, we provide a discussion about the niches and challenges that remain for future research.",
+      "source": "arxiv",
+      "arxiv_id": "2412.15261v1",
+      "pdf_url": "https://arxiv.org/pdf/2412.15261v1.pdf"
+    },
+    {
+      "title": "Towards a Technique for Extracting Microservices from Monolithic Enterprise Systems",
+      "authors": [
+        "Alessandra Levcovitz",
+        "Ricardo Terra",
+        "Marco Tulio Valente"
+      ],
+      "year": 2016,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The idea behind microservices architecture is to develop a single large, complex application as a suite of small, cohesive, independent services. On the other way, monolithic systems get larger over the time, deviating from the intended architecture, and becoming risky and expensive to evolve. This paper describes a technique to identify and define microservices on monolithic enterprise systems. As the major contribution, our evaluation shows that our approach was able to identify relevant candidates to become microservices on a 750 KLOC banking system.",
+      "source": "arxiv",
+      "arxiv_id": "1605.03175v1",
+      "pdf_url": "https://arxiv.org/pdf/1605.03175v1.pdf"
+    },
+    {
+      "title": "The Importance of Environmental Factors in Forecasting Australian Power Demand",
+      "authors": [
+        "Ali Eshragh",
+        "Benjamin Ganim",
+        "Terry Perkins",
+        "Kasun Bandara"
+      ],
+      "year": 2019,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "We develop a time series model to forecast weekly peak power demand for three main states of Australia for a yearly time-scale, and show the crucial role of environmental factors in improving the forecasts. More precisely, we construct a seasonal autoregressive integrated moving average (SARIMA) model and reinforce it by employing the exogenous environmental variables including, maximum temperature, minimum temperature, and solar exposure. The estimated hybrid SARIMA-regression model exhibits an excellent mean absolute percentage error (MAPE) of 3.41%. Moreover, our analysis demonstrates the importance of the environmental factors by showing a remarkable improvement of 46.3% in MAPE for the hybrid model over the crude SARIMA model which merely includes the power demand variables. In order to illustrate the efficacy of our model, we compare our outcome with the state-of-the-art machine learning methods in forecasting. The results reveal that our model outperforms the latter approach.",
+      "source": "arxiv",
+      "arxiv_id": "1911.00817v3",
+      "pdf_url": "https://arxiv.org/pdf/1911.00817v3.pdf"
+    },
+    {
+      "title": "Performance Enhancement of the Ozaki Scheme on Integer Matrix Multiplication Unit",
+      "authors": [
+        "Yuki Uchino",
+        "Katsuhisa Ozaki",
+        "Toshiyuki Imamura"
+      ],
+      "year": 2024,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "This study was aimed at simultaneously achieving sufficient accuracy and high performance for general matrix multiplications. Recent architectures, such as NVIDIA GPUs, feature high-performance units designed for low-precision matrix multiplications in machine learning models, and next-generation architectures are expected to follow the same design principle. The key to achieving superior performance is to fully leverage such architectures. The Ozaki scheme, a highly accurate matrix multiplication algorithm using error-free transformations, enables higher-precision matrix multiplication to be performed through multiple lower-precision matrix multiplications and higher-precision matrix additions. Ootomo et al. implemented the Ozaki scheme on high-performance matrix multiplication units with the aim of achieving both sufficient accuracy and high performance. This paper proposes alternative approaches to improving performance by reducing the numbers of lower-precision matrix multiplications and higher-precision matrix additions. Numerical experiments demonstrate the accuracy of the results and conduct performance benchmarks of the proposed approaches. These approaches are expected to yield more efficient results in next-generation architectures.",
+      "source": "arxiv",
+      "arxiv_id": "2409.13313v1",
+      "pdf_url": "https://arxiv.org/pdf/2409.13313v1.pdf"
+    },
+    {
+      "title": "A strategic planning of a digital copy (an enterprise) as a task of control a dynamic system",
+      "authors": [
+        "Seregey Masaev",
+        "Valentina Vingert",
+        "Alexey Bogdanov",
+        "Yass Salal"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The area of research includes: control theory, dynamic systems, parameters of the external environment, mode, integral indicators, strategy. The general problem of assessing the state of large economic objects (enterprises) is revealed. There is no unified assessment a control of through strategic planning. The article proposes an integral indicator method for a unified assessment of the enterprise. The enterprise is formalized as a digital copy. The digital copy includes all business processes at any given time. The digital copy is presented as a multidimensional dynamic system. Dimension of multidimensional dynamic system is 1.2 parameters This allows you to estimate the modes operation of the enterprise in the normal mode and in the mode for control of strategic planning.",
+      "source": "arxiv",
+      "arxiv_id": "2501.16725v1",
+      "pdf_url": "https://arxiv.org/pdf/2501.16725v1.pdf"
+    },
+    {
+      "title": "diagnoseIT: Expertengestützte automatische Diagnose von Performance-Probleme in Enterprise-Anwendungen (Abschlussbericht)",
+      "authors": [
+        "Christoph Heger",
+        "André van Hoorn",
+        "Dušan Okanovic",
+        "Stefan Siegl",
+        "Christian Vögele",
+        "Alexander Wert"
+      ],
+      "year": 2018,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "This is the final report of the collaborative research project diagnoseIT on expert-guided automatic diagnosis of performance problems in enterprise applications.",
+      "source": "arxiv",
+      "arxiv_id": "1802.00056v1",
+      "pdf_url": "https://arxiv.org/pdf/1802.00056v1.pdf"
+    },
+    {
+      "title": "A review of analytical performance modeling and its role in computer engineering and science",
+      "authors": [
+        "Y. C. Tay"
+      ],
+      "year": 2020,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "This article is a review of analytical performance modeling for computer systems. It discusses the motivation for this area of research, examines key issues, introduces some ideas, illustrates how it is applied, and points out a role that it can play in developing Computer Science.",
+      "source": "arxiv",
+      "arxiv_id": "2005.13144v1",
+      "pdf_url": "https://arxiv.org/pdf/2005.13144v1.pdf"
+    },
+    {
+      "title": "A survey of sparse matrix-vector multiplication performance on large matrices",
+      "authors": [
+        "Max Grossman",
+        "Christopher Thiele",
+        "Mauricio Araya-Polo",
+        "Florian Frank",
+        "Faruk O. Alpak",
+        "Vivek Sarkar"
+      ],
+      "year": 2016,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "We contribute a third-party survey of sparse matrix-vector (SpMV) product performance on industrial-strength, large matrices using: (1) The SpMV implementations in Intel MKL, the Trilinos project (Tpetra subpackage), the CUSPARSE library, and the CUSP library, each running on modern architectures. (2) NVIDIA GPUs and Intel multi-core CPUs (supported by each software package). (3) The CSR, BSR, COO, HYB, and ELL matrix formats (supported by each software package).",
+      "source": "arxiv",
+      "arxiv_id": "1608.00636v1",
+      "pdf_url": "https://arxiv.org/pdf/1608.00636v1.pdf"
+    },
+    {
+      "title": "Performance Modeling for Dense Linear Algebra",
+      "authors": [
+        "Elmar Peise",
+        "Paolo Bientinesi"
+      ],
+      "year": 2012,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "It is well known that the behavior of dense linear algebra algorithms is greatly influenced by factors like target architecture, underlying libraries and even problem size; because of this, the accurate prediction of their performance is a real challenge. In this article, we are not interested in creating accurate models for a given algorithm, but in correctly ranking a set of equivalent algorithms according to their performance. Aware of the hierarchical structure of dense linear algebra routines, we approach the problem by developing a framework for the automatic generation of statistical performance models for BLAS and LAPACK libraries. This allows us to obtain predictions through evaluating and combining such models. We demonstrate that our approach is successful in both single- and multi-core environments, not only in the ranking of algorithms but also in tuning their parameters.",
+      "source": "arxiv",
+      "arxiv_id": "1209.2364v2",
+      "pdf_url": "https://arxiv.org/pdf/1209.2364v2.pdf"
+    },
+    {
+      "title": "Decomposing Docker Container Startup Performance: A Three-Tier Measurement Study on Heterogeneous Infrastructure",
+      "authors": [
+        "Shamsher Khan"
+      ],
+      "year": 2026,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Container startup latency is a critical performance metric for CI/CD pipelines, serverless computing, and auto-scaling systems, yet practitioners lack empirical guidance on how infrastructure choices affect this latency. We present a systematic measurement study that decomposes Docker container startup into constituent operations across three heterogeneous infrastructure tiers: Azure Premium SSD (cloud SSD), Azure Standard HDD (cloud HDD), and macOS Docker Desktop (developer workstation with hypervisor-based virtualization). Using a reproducible benchmark suite that executes 50 iterations per test across 10 performance dimensions, we quantify previously under-characterized relationships between infrastructure configuration and container runtime behavior. Our key findings include: (1) container startup is dominated by runtime overhead rather than image size, with only 2.5% startup variation across images ranging from 5 MB to 155 MB on SSD; (2) storage tier selection imposes a 2.04x startup penalty (HDD 1157 ms vs. SSD 568 ms); (3) Docker Desktop's hypervisor layer introduces a 2.69x startup penalty and 9.5x higher CPU throttling variance compared to native Linux; (4) OverlayFS write performance collapses by up to two orders of magnitude compared to volume mounts on SSD-backed storage; and (5) Linux namespace creation contributes only 8-10 ms (<1.5%) of total startup time. All measurement scripts, raw data, and analysis tools are publicly available.",
+      "source": "arxiv",
+      "arxiv_id": "2602.15214v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.15214v1.pdf"
+    },
+    {
+      "title": "On the Quantum Performance Evaluation of Two Distributed Quantum Architectures",
+      "authors": [
+        "Gayane Vardoyan",
+        "Matthew Skrzypczyk",
+        "Stephanie Wehner"
+      ],
+      "year": 2021,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Distributed quantum applications impose requirements on the quality of the quantum states that they consume. When analyzing architecture implementations of quantum hardware, characterizing this quality forms an important factor in understanding their performance. Fundamental characteristics of quantum hardware lead to inherent tradeoffs between the quality of states and traditional performance metrics such as throughput. Furthermore, any real-world implementation of quantum hardware exhibits time-dependent noise that degrades the quality of quantum states over time. Here, we study the performance of two possible architectures for interfacing a quantum processor with a quantum network. The first corresponds to the current experimental state of the art in which the same device functions both as a processor and a network device. The second corresponds to a future architecture that separates these two functions over two distinct devices. We model these architectures as Markov chains and compare their quality of executing quantum operations and producing entangled quantum states as functions of their memory lifetimes, as well as the time that it takes to perform various operations within each architecture. As an illustrative example, we apply our analysis to architectures based on Nitrogen-Vacancy centers in diamond, where we find that for present-day device parameters one architecture is more suited to computation-heavy applications, and the other for network-heavy ones. Besides the detailed study of these architectures, a novel contribution of our work are several formulas that connect an understanding of waiting time distributions to the decay of quantum quality over time for the most common noise models employed in quantum technologies. This provides a valuable new tool for performance evaluation experts, and its applications extend beyond the two architectures studied in this work.",
+      "source": "arxiv",
+      "arxiv_id": "2107.12246v2",
+      "pdf_url": "https://arxiv.org/pdf/2107.12246v2.pdf"
+    },
+    {
+      "title": "Environmental Economics and Uncertainty: Review and a Machine Learning Outlook",
+      "authors": [
+        "Ruda Zhang",
+        "Patrick Wingo",
+        "Rodrigo Duran",
+        "Kelly Rose",
+        "Jennifer Bauer",
+        "Roger Ghanem"
+      ],
+      "year": 2020,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Economic assessment in environmental science concerns the measurement or valuation of environmental impacts, adaptation, and vulnerability. Integrated assessment modeling is a unifying framework of environmental economics, which attempts to combine key elements of physical, ecological, and socioeconomic systems. Uncertainty characterization in integrated assessment varies by component models: uncertainties associated with mechanistic physical models are often assessed with an ensemble of simulations or Monte Carlo sampling, while uncertainties associated with impact models are evaluated by conjecture or econometric analysis. Manifold sampling is a machine learning technique that constructs a joint probability model of all relevant variables which may be concentrated on a low-dimensional geometric structure. Compared with traditional density estimation methods, manifold sampling is more efficient especially when the data is generated by a few latent variables. The manifold-constrained joint probability model helps answer policy-making questions from prediction, to response, and prevention. Manifold sampling is applied to assess risk of offshore drilling in the Gulf of Mexico.",
+      "source": "arxiv",
+      "arxiv_id": "2004.11780v1",
+      "pdf_url": "https://arxiv.org/pdf/2004.11780v1.pdf"
+    },
+    {
+      "title": "A Performance-Portable SYCL Implementation of CRK-HACC for Exascale",
+      "authors": [
+        "Esteban M. Rangel",
+        "S. John Pennycook",
+        "Adrian Pope",
+        "Nicholas Frontiere",
+        "Zhiqiang Ma",
+        "Varsha Madananth"
+      ],
+      "year": 2023,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The first generation of exascale systems will include a variety of machine architectures, featuring GPUs from multiple vendors. As a result, many developers are interested in adopting portable programming models to avoid maintaining multiple versions of their code. It is necessary to document experiences with such programming models to assist developers in understanding the advantages and disadvantages of different approaches.   To this end, this paper evaluates the performance portability of a SYCL implementation of a large-scale cosmology application (CRK-HACC) running on GPUs from three different vendors: AMD, Intel, and NVIDIA. We detail the process of migrating the original code from CUDA to SYCL and show that specializing kernels for specific targets can greatly improve performance portability without significantly impacting programmer productivity. The SYCL version of CRK-HACC achieves a performance portability of 0.96 with a code divergence of almost 0, demonstrating that SYCL is a viable programming model for performance-portable applications.",
+      "source": "arxiv",
+      "arxiv_id": "2310.16122v1",
+      "pdf_url": "https://arxiv.org/pdf/2310.16122v1.pdf"
+    },
+    {
+      "title": "Enhancing Performance Monitoring in C/C++ Programs with EDPM: A Domain-Specific Language for Performance Monitoring",
+      "authors": [
+        "David Weisskopf Holmqvist",
+        "Suejb Memeti"
+      ],
+      "year": 2023,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The utilization of performance monitoring probes is a valuable tool for programmers to gather performance data. However, the manual insertion of these probes can result in an increase in code size, code obfuscation, and an added burden of learning different APIs associated with performance monitoring tools. To mitigate these issues, EDPM, an embedded domain-specific language, was developed to provide a higher level of abstraction for annotating regions of code that require instrumentation in C and C++ programs. This paper presents the design and implementation of EDPM and compares it to the well-known tool PAPI, in terms of required lines of code, flexibility in configuring regions, and performance overhead. The results of this study demonstrate that EDPM is a low-resolution profiling tool that offers a reduction in required lines of code and enables programmers to express various configurations of regions. Furthermore, the design of EDPM is such that its pragmas are ignored by the standard compiler, allowing for seamless integration into existing software processes without disrupting build systems or increasing the size of the executable. Additionally, the design of the EDPM pre-compiler allows for the extension of available performance counters while maintaining a high level of abstraction for programmers. Therefore, EDPM offers a promising solution to simplify and optimize performance monitoring in C and C++ programs.",
+      "source": "arxiv",
+      "arxiv_id": "2311.03535v1",
+      "pdf_url": "https://arxiv.org/pdf/2311.03535v1.pdf"
+    },
+    {
+      "title": "Test for penetration in Wi-Fi network: attacks on WPA2-PSK and WPA2-Enterprise",
+      "authors": [
+        "Tamara Radivilova",
+        "Hassan Ali Hassan"
+      ],
+      "year": 2018,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "In this work the wireless networks security algorithms were analyzed. The fundamentals of the WPA and WPA2 safety algorithms, their weaknesses and ways of attacking WPA and WPA2 Enterprise Wireless Networks are described. Successful attack on the WPA2-PSK and WPA2-Enterprise was carried out during the performance of work. The progress of this attack and its results were described.",
+      "source": "arxiv",
+      "arxiv_id": "1805.06691v1",
+      "pdf_url": "https://arxiv.org/pdf/1805.06691v1.pdf"
+    },
+    {
+      "title": "Performance Evaluation of Container-based Virtualization for High Performance Computing Environments",
+      "authors": [
+        "Carlos Arango",
+        "Rémy Dernat",
+        "John Sanabria"
+      ],
+      "year": 2017,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Virtualization technologies have evolved along with the development of computational environments since virtualization offered needed features at that time such as isolation, accountability, resource allocation, resource fair sharing and so on. Novel processor technologies bring to commodity computers the possibility to emulate diverse environments where a wide range of computational scenarios can be run. Along with processors evolution, system developers have created different virtualization mechanisms where each new development enhanced the performance of previous virtualized environments. Recently, operating system-based virtualization technologies captured the attention of communities abroad (from industry to academy and research) because their important improvements on performance area.   In this paper, the features of three container-based operating systems virtualization tools (LXC, Docker and Singularity) are presented. LXC, Docker, Singularity and bare metal are put under test through a customized single node HPL-Benchmark and a MPI-based application for the multi node testbed. Also the disk I/O performance, Memory (RAM) performance, Network bandwidth and GPU performance are tested for the COS technologies vs bare metal. Preliminary results and conclusions around them are presented and discussed.",
+      "source": "arxiv",
+      "arxiv_id": "1709.10140v1",
+      "pdf_url": "https://arxiv.org/pdf/1709.10140v1.pdf"
+    },
+    {
+      "title": "Towards a methodology to consider the environmental impacts of digital agriculture",
+      "authors": [
+        "Pierre La Rocca"
+      ],
+      "year": 2023,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Agriculture affects global warming, while its yields are threatened by it. Information and communication technology (ICT) is often considered as a potential lever to mitigate this tension, through monitoring and process optimization. However, while agricultural ICT is actively promoted, its environmental impact appears to be overlooked. Possible rebound effects could put at stake its net expected benefits and hamper agriculture sustainability. By adapting environmental footprint assessment methods to digital agriculture context, this research aims at defining a methodology taking into account the environmental footprint of agricultural ICT systems and their required infrastructures. The expected contribution is to propose present and prospective models based on possible digitalization scenarios, in order to assess effects and consequences of different technological paths on agriculture sustainability, sufficiency and resilience. The final results could be useful to enlighten societal debates and political decisions.",
+      "source": "arxiv",
+      "arxiv_id": "2305.09250v2",
+      "pdf_url": "https://arxiv.org/pdf/2305.09250v2.pdf"
+    },
+    {
+      "title": "An efficient approach to represent enterprise web application structure using Large Language Model in the service of Intelligent Quality Engineering",
+      "authors": [
+        "Zaber Al Hassan Ayon",
+        "Gulam Husain",
+        "Roshankumar Bisoi",
+        "Waliur Rahman",
+        "Dr Tom Osborn"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "This paper presents a novel approach to represent enterprise web application structures using Large Language Models (LLMs) to enable intelligent quality engineering at scale. We introduce a hierarchical representation methodology that optimizes the few-shot learning capabilities of LLMs while preserving the complex relationships and interactions within web applications. The approach encompasses five key phases: comprehensive DOM analysis, multi-page synthesis, test suite generation, execution, and result analysis. Our methodology addresses existing challenges around usage of Generative AI techniques in automated software testing by developing a structured format that enables LLMs to understand web application architecture through in-context learning. We evaluated our approach using two distinct web applications: an e-commerce platform (Swag Labs) and a healthcare application (MediBox) which is deployed within Atalgo engineering environment. The results demonstrate success rates of 90\\% and 70\\%, respectively, in achieving automated testing, with high relevance scores for test cases across multiple evaluation criteria. The findings suggest that our representation approach significantly enhances LLMs' ability to generate contextually relevant test cases and provide better quality assurance overall, while reducing the time and effort required for testing.",
+      "source": "arxiv",
+      "arxiv_id": "2501.06837v1",
+      "pdf_url": "https://arxiv.org/pdf/2501.06837v1.pdf"
+    },
+    {
+      "title": "Study on the Identification of Financial Risk Path Under the Digital Transformation of Enterprise Based on DEMATEL-ISM-MICMAC",
+      "authors": [
+        "Jie Dong"
+      ],
+      "year": 2023,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Digital transformation challenges financial management while reducing costs and increasing efficiency for enterprises in various countries. Identifying the transmission paths of enterprise financial risks in the context of digital transformation is an urgent problem to be solved. This paper constructs a system of influencing factors of corporate financial risks in the new era through literature research. It proposes a path identification method of financial risks in the context of the digital transformation of enterprises based on DEMATEL-ISM-MICMAC. This paper explores the intrinsic association among the influencing factors of corporate financial risks, identifies the key influencing factors, sorts out the hierarchical structure of the influencing factor system, and analyses the dependency and driving relationships among the factors in this system. The results show that: (1) The political and economic environment being not optimistic will limit the enterprise's operating ability, thus directly leading to the change of the enterprise's asset and liability structure and working capital stock. (2) The enterprise's unreasonable talent training and incentive mechanism will limit the enterprise's technological innovation ability and cause a shortage of digitally literate financial talents, which eventually leads to the vulnerability of the enterprise's financial management. This study provides a theoretical reference for enterprises to develop risk management strategies and ideas for future academic research in digital finance.",
+      "source": "arxiv",
+      "arxiv_id": "2305.04216v1",
+      "pdf_url": "https://arxiv.org/pdf/2305.04216v1.pdf"
+    },
+    {
+      "title": "Assessing Tenstorrent's RISC-V MatMul Acceleration Capabilities",
+      "authors": [
+        "Hiari Pizzini Cavagna",
+        "Daniele Cesarini",
+        "Andrea Bartolini"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "The increasing demand for generative AI as Large Language Models (LLMs) services has driven the need for specialized hardware architectures that optimize computational efficiency and energy consumption. This paper evaluates the performance of the Tenstorrent Grayskull e75 RISC-V accelerator for basic linear algebra kernels at reduced numerical precision, a fundamental operation in LLM computations. We present a detailed characterization of Grayskull's execution model, gridsize, matrix dimensions, data formats, and numerical precision impact computational efficiency. Furthermore, we compare Grayskull's performance against state-of-the-art architectures with tensor acceleration, including Intel Sapphire Rapids processors and two NVIDIA GPUs (V100 and A100). Whilst NVIDIA GPUs dominate raw performance, Grayskull demonstrates a competitive trade-off between power consumption and computational throughput, reaching a peak of 1.55 TFLOPs/Watt with BF16.",
+      "source": "arxiv",
+      "arxiv_id": "2505.06085v3",
+      "pdf_url": "https://arxiv.org/pdf/2505.06085v3.pdf"
+    },
+    {
+      "title": "AI-Driven Digital Transformation and Firm Performance in Chinese Industrial Enterprises: Mediating Role of Green Digital Innovation and Moderating Effects of Human-AI Collaboration",
+      "authors": [
+        "Jun Cui"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "This study examines the relationship between AI-driven digital transformation and firm performance in Chinese industrial enterprises, with particular attention to the mediating role of green digital innovation and the moderating effects of human-AI collaboration. Using panel data from 6,300 firm-year observations collected from CNRDS and CSMAR databases between 2015 and 2022, we employ multiple regression analysis and structural equation modeling to test our hypotheses. Our findings reveal that AI-driven digital transformation significantly enhances firm performance, with green digital innovation mediating this relationship. Furthermore, human-AI collaboration positively moderates both the direct relationship between digital transformation and firm performance and the mediating pathway through green digital innovation. The results provide valuable insights for management practice and policy formulation in the context of China's evolving industrial landscape and digital economy initiatives. This research contributes to the literature by integrating perspectives from technology management, environmental sustainability, and organizational theory to understand the complex interplay between technological adoption and business outcomes.",
+      "source": "arxiv",
+      "arxiv_id": "2505.11558v1",
+      "pdf_url": "https://arxiv.org/pdf/2505.11558v1.pdf"
+    },
+    {
+      "title": "Automatic Microprocessor Performance Bug Detection",
+      "authors": [
+        "Erick Carvajal Barboza",
+        "Sara Jacob",
+        "Mahesh Ketkar",
+        "Michael Kishinevsky",
+        "Paul Gratz",
+        "Jiang Hu"
+      ],
+      "year": 2020,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Processor design validation and debug is a difficult and complex task, which consumes the lion's share of the design process. Design bugs that affect processor performance rather than its functionality are especially difficult to catch, particularly in new microarchitectures. This is because, unlike functional bugs, the correct processor performance of new microarchitectures on complex, long-running benchmarks is typically not deterministically known. Thus, when performance benchmarking new microarchitectures, performance teams may assume that the design is correct when the performance of the new microarchitecture exceeds that of the previous generation, despite significant performance regressions existing in the design. In this work, we present a two-stage, machine learning-based methodology that is able to detect the existence of performance bugs in microprocessors. Our results show that our best technique detects 91.5% of microprocessor core performance bugs whose average IPC impact across the studied applications is greater than 1% versus a bug-free design with zero false positives. When evaluated on memory system bugs, our technique achieves 100% detection with zero false positives. Moreover, the detection is automatic, requiring very little performance engineer time.",
+      "source": "arxiv",
+      "arxiv_id": "2011.08781v2",
+      "pdf_url": "https://arxiv.org/pdf/2011.08781v2.pdf"
+    },
+    {
+      "title": "NourID+: A Digital Energy Identity Framework for Efficient Subsidy Allocation in Morocco",
+      "authors": [
+        "Fatima Zahra Iguenfer",
+        "Younes Lamhamedi Cherradi",
+        "Nada Belkhayat",
+        "Hiba Jebbar"
+      ],
+      "year": 2025,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "We introduce NourID+, a digital energy identity framework that addresses Morocco's need for trusted energy subsidy allocation through authenticated digital identity integration. NourID+ creates a strong foundation for future subsidy programs by unifying three government-issued and digitalized credentials: Moroccan national identity cards (CIN), cadastral plans, and property ownership certificates are transformed into unique digital energy IDs (DE-IDs) that map authenticated identities with specific properties and their energy consumption patterns. The system supports three property ownership profiles: farmers (landowners), entrepreneurs (factory or company owners), and households (house owners), as energy consumption is directly related to land ownership. NourID+ provides dual access through a government portal allowing officials to process DE-ID generation requests, as well as a citizen portal for DE-ID usage and energy monitoring. Our framework supports CIN upload with facial biometric matching, automated property retrieval through government APIs, and government officer approval workflow for DE-ID generation. After evaluation of the system, we demonstrate a reduction in verification time from weeks to minutes, with 98% accuracy of document validation. The proposed solution allows for targeted subsidy allocation of electricity based on actual consumption needs rather than estimations, potentially improving the efficiency of Morocco's significant energy subsidy expenditure.",
+      "source": "arxiv",
+      "arxiv_id": "2507.04424v1",
+      "pdf_url": "https://arxiv.org/pdf/2507.04424v1.pdf"
+    },
+    {
+      "title": "Enhancing Trace Visualizations for Microservices Performance Analysis",
+      "authors": [
+        "Jessica Leone",
+        "Luca Traini"
+      ],
+      "year": 2023,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Performance analysis of microservices can be a challenging task, as a typical request to these systems involves multiple Remote Procedure Calls (RPC) spanning across independent services and machines. Practitioners primarily rely on distributed tracing tools to closely monitor microservices performance. These tools enable practitioners to trace, collect, and visualize RPC workflows and associated events in the context of individual end-to-end requests. While effective for analyzing individual end-to-end requests, current distributed tracing visualizations often fall short in providing a comprehensive understanding of the system's overall performance. To address this limitation, we propose a novel visualization approach that enables aggregate performance analysis of multiple end-to-end requests. Our approach builds on a previously developed technique for comparing structural differences of request pairs and extends it for aggregate performance analysis of sets of requests. This paper presents our proposal and discusses our preliminary ongoing progress in developing this innovative approach.",
+      "source": "arxiv",
+      "arxiv_id": "2302.12734v1",
+      "pdf_url": "https://arxiv.org/pdf/2302.12734v1.pdf"
+    },
+    {
+      "title": "Digitalization of exceptional simple Lie algebras into matrices over complex numbers",
+      "authors": [
+        "Takao Imai"
+      ],
+      "year": 2020,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "We give the images of the adjoint representations of exceptional simple Lie algebras by matrices over complex numbers. Next, we digitalize these matrices by the use of Maxima, which is a computer algebra system. These digitalized matrices are provided by using Maxima's function. We prove that these digitalized matrices are closed by Lie bracket operations and make up simple Lie algebras. Moreover, to prove the type of the exceptional simple Lie algebra, we calculate the root system using Maxima for Lie bracket operations as matrix calculations. We show some examples of classical Lie subalgebras of these digitalized matrices.",
+      "source": "arxiv",
+      "arxiv_id": "2010.06696v3",
+      "pdf_url": "https://arxiv.org/pdf/2010.06696v3.pdf"
+    },
+    {
+      "title": "Validation of hardware events for successful performance pattern identification in High Performance Computing",
+      "authors": [
+        "Thomas Röhl",
+        "Jan Eitzinger",
+        "Georg Hager",
+        "Gerhard Wellein"
+      ],
+      "year": 2017,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "Hardware performance monitoring (HPM) is a crucial ingredient of performance analysis tools. While there are interfaces like LIKWID, PAPI or the kernel interface perf\\_event which provide HPM access with some additional features, many higher level tools combine event counts with results retrieved from other sources like function call traces to derive (semi-)automatic performance advice. However, although HPM is available for x86 systems since the early 90s, only a small subset of the HPM features is used in practice. Performance patterns provide a more comprehensive approach, enabling the identification of various performance-limiting effects. Patterns address issues like bandwidth saturation, load imbalance, non-local data access in ccNUMA systems, or false sharing of cache lines. This work defines HPM event sets that are best suited to identify a selection of performance patterns on the Intel Haswell processor. We validate the chosen event sets for accuracy in order to arrive at a reliable pattern detection mechanism and point out shortcomings that cannot be easily circumvented due to bugs or limitations in the hardware.",
+      "source": "arxiv",
+      "arxiv_id": "1710.04094v1",
+      "pdf_url": "https://arxiv.org/pdf/1710.04094v1.pdf"
+    },
+    {
+      "title": "Ubiquitous knowledge empowers the Smart Factory: The impacts of a Service-oriented Digital Twin on enterprises' performance",
+      "authors": [
+        "Francesco Longo",
+        "Letizia Nicoletti",
+        "Antonio Padovano"
+      ],
+      "year": 2022,
+      "citations": 0,
+      "venue": "arXiv",
+      "abstract": "While the Industry 4.0 is idolizing the potential of an artificial intelligence embedded into \"things\", it is neglecting the role of the human component, which is still indispensable in different manufacturing activities, such as a machine setup or maintenance operations. The present research study first proposes an Industrial Internet pyramid as emergent human-centric manufacturing paradigm within Industry 4.0 in which central is the role of a Ubiquitous Knowledge about the manufacturing system intuitively accessed and used by the manufacturing employees. Second, the prototype of a Service-oriented Digital Twin, which leverage on a flexible ontology-oriented knowledge structure and on augmented reality combined to a vocal interaction system for an intuitive knowledge retrieval and fruition, has been designed and developed to deliver this manufacturing knowledge. Two test-beds, complimentary for the problems in practice (the former on the maintenance-production interface in a large enterprise, the latter majorly focused in production and setups in a small and medium enterprise), show the significant benefits in terms of time, costs and process quality, thus validating the approach proposed. This research shows that a human-centric and knowledge-driven approach can drive the performance of Industry 4.0 initiatives and lead a Smart Factory towards its full potential.",
+      "source": "arxiv",
+      "arxiv_id": "2206.03268v1",
+      "pdf_url": "https://arxiv.org/pdf/2206.03268v1.pdf"
+    }
+  ]
+}

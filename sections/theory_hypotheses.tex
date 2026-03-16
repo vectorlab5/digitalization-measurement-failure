@@ -1,0 +1,32 @@
+% =============================================================================
+% CONCEPTUAL CLARIFICATION: Target constructs vs implemented proxies.
+% Compressed for methodological note; no elaborate framework to be estimated.
+% =============================================================================
+
+\section{Conceptual Clarification: Target Constructs vs.\ Implemented Proxies}
+\label{sec:theory}
+
+To \emph{identify} whether enterprise digitalization improves both TFP and environmental performance (the double dividend) in heavily polluting firms, a valid design would need to measure the following constructs and their relationships: (1) \emph{Digitalization}, e.g., from annual-report text or digital-asset indices; (2) \emph{TFP}, e.g., from a production-function residual (Levinsohn--Petrin or Olley--Pakes); (3) \emph{Environmental performance}, e.g., emission intensity or green TFP; (4) \emph{Green innovation} (if mediation is of interest), e.g., green patent counts; (5) \emph{Environmental regulation} (if moderation is of interest), e.g., regional enforcement indices; (6) \emph{Size}, e.g., log total assets. Direct effects (digitalization $\to$ TFP, digitalization $\to$ environmental performance), mediation (digitalization $\to$ green innovation $\to$ environmental performance), and moderation by regulation or firm characteristics are then estimable in principle. This paper does \emph{not} estimate these links. We clarify the \emph{mismatch} between target constructs and what is implemented when only open, revenue-related data are available.
+
+Table~\ref{tab:target-vs-proxy} summarizes the target constructs and the proxies we implement in our illustration. The implemented proxies (revenue rank, ROE, revenue growth, ROE improvement, year, ln(revenue)) do not measure the target constructs; they introduce construct mismatch and same-source variation (regressor, control, and one outcome all revenue-based). Figure~\ref{fig:model} depicts the target structure (direct, mediation, moderation) for reference; we use it only to show what would need to be identified, not to be estimated in this paper.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Target constructs vs.\ implemented proxies.}
+  \label{tab:target-vs-proxy}
+  \small
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+    \toprule
+    Construct & Target (for identification) & Implemented (illustration) \\
+    \midrule
+    Digitalization & Text-based index, digital assets & Industry-year revenue rank \\
+    TFP & LP/OP residual & ROE \\
+    Environmental performance & Emission intensity, GTFP & Revenue growth \\
+    Green innovation (mediator) & Green patents & ROE improvement \\
+    Regulation (moderator) & Regional index & Year (time trend) \\
+    Size & ln(total assets) & ln(revenue) \\
+    \bottomrule
+  \end{tabularx}
+  \vspace{0.5em}
+  \parbox{\textwidth}{\raggedright\footnotesize\textit{Note.} The implemented column is used only to demonstrate measurement failure; it does not identify the target relationships.}
+\end{table}

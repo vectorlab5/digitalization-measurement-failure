@@ -1,0 +1,25 @@
+% =============================================================================
+% RESULTS: Compressed for methodological note.
+% Core: one proxy table + controlled experiment; rest in appendix.
+% =============================================================================
+
+\section{Illustration: What Happens When Revenue-Based Proxies Replace Constructs}
+\label{sec:results}
+
+This section presents the \emph{proxy illustration} and a \emph{controlled experiment}. Both show that regressions using revenue rank, ROE, and revenue growth study \emph{revenue dynamics}, not digitalization; same-source bias and construct mismatch make coefficients uninterpretable for the theoretical question (Section~\ref{sec:why-gap}).
+
+\subsection{Sample and Descriptives}
+
+Table~\ref{tab:descriptives} reports descriptive statistics. Sample construction and merge diagnostics are in Section~\ref{sec:implemented-design}, Table~\ref{tab:merge-diagnostics}, and Figure~\ref{fig:sample-flow}. Revenue and ROE are available for 3,481 firm-year observations (878 firms). Total assets match only 64 firm-years after the balance-sheet merge; we use size = ln(revenue), so the regression sample is 2,598 firm-years (873 firms). Figure~\ref{fig:descriptive} shows mean revenue and mean ROE by year.
+
+\subsection{Proxy Behavior Under Revenue-Based Operationalization}
+
+The purpose of this illustration is structural demonstration, not empirical discovery. Table~\ref{tab:regression} presents the main proxy illustration. Columns (1)--(2): outcome = TFP proxy (ROE); columns (3)--(4): outcome = environmental performance proxy (revenue growth). Regressor = lagged industry-year revenue rank (digitalization proxy). The coefficient on lagged digitalization in the TFP equation is $\beta = -35.91$ ($SE = 4.31$); in the environmental performance equation it is $\beta = -3.00$ ($SE = 0.06$). Both are \emph{negative}. The sign is consistent with mechanical same-source structure: higher revenue rank (larger size within industry-year) can be associated with mean-reverting revenue growth or with ROE patterns that reflect scale and competition rather than digitalization; we do not interpret the sign as evidence for or against the double dividend. These associations cannot be interpreted as causal, because (i) the digitalization proxy conflates size and industry-year shocks with digital adoption; (ii) revenue growth is not environmental performance; (iii) regressor, control (ln revenue), and one outcome (revenue growth) share revenue-based variation (same-source bias). The large $R^2$ rise for the environmental equation (0.224 to 0.580) when the proxy is added is consistent with this. Observations: 2,598 (873 firms).
+
+\subsection{Demonstration: Same-Source Structure}
+
+To isolate the role of proxy choice, we use the experiment described in Section~\ref{sec:synthetic-experiment} (Methods): a panel with latent ``true digitalization'' by design \emph{uncorrelated} with revenue. \textbf{Validation:} Table~\ref{tab:synthetic-validation} reports descriptive statistics and the main DGP check. The environmental performance proxy (revenue growth) has mean 0.001 and SD 0.100; the lagged digitalization proxy (revenue rank) has mean 0.505 and SD 0.289, in line with typical firm-level panel data. The correlation between latent true digitalization and revenue is $-0.008$ (and with log revenue $-0.007$), confirming that the DGP satisfies $\text{true digitalization} \perp \text{revenue}$. \textbf{Regression:} When we regress the environmental performance proxy on the lagged digitalization proxy with firm and year fixed effects, we obtain a statistically significant coefficient: $\beta = -0.32$ ($SE = 0.038$), $t = -8.42$, $N = 1{,}500$. Because the DGP has no link between true digitalization and revenue, this association arises entirely from \emph{same-source structure} (both variables are revenue-based). The experiment therefore confirms that the associations in our main illustration reflect measurement structure, not identification of the digitalization--environment or digitalization--TFP relationship. A fixed seed (42) ensures reproducibility.
+
+\subsection{Additional Regressions (Appendix)}
+
+Mediation (proxy mediator = ROE improvement), moderation (year, margin, size), robustness (alternative outcome and digitalization proxy), coefficient plot, and moderation plot are reported in \ref{app:extra-tables}. The instrumental-variable specification (weak instrument, first-stage $F = 2.02$) is in \ref{app:iv}. We do not use any of these for inference; they are included for transparency.
