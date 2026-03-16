@@ -23,3 +23,8 @@ __pycache__/
 # Experiments / temp results
 experiments/
 *.tmp
+
+# Local-only LaTeX sources
+main.tex
+sections/
+paper_latex/
