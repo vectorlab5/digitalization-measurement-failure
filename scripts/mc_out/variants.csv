@@ -1,0 +1,6 @@
+variant,mean_beta,bias,rmse,mean_se,reject_rate,coverage,mean_abs_t
+A. Baseline (random walk),-0.3334,-0.3334,0.3349,0.0366,1.0000,0.0000,9.1450
+B. + Industry heterogeneity,-0.3133,-0.3133,0.3148,0.0345,1.0000,0.0000,9.1140
+C. + Time trends,-0.3085,-0.3085,0.3101,0.0357,1.0000,0.0000,8.6802
+D. + AR(1) revenue,-0.4207,-0.4207,0.4220,0.0370,1.0000,0.0000,11.3950
+E. True effect (beta*=0.5),-0.3325,-0.3325,0.3339,0.0365,1.0000,0.0000,9.1439
